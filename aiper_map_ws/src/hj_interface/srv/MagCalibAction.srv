@@ -1,0 +1,5 @@
+bool action # 0 无法标定 1 可以标定
+int32 duration # 静止标定时间
+---
+
+bool success # 0 标定失败 1 标定完成

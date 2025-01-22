@@ -1,0 +1,8 @@
+geometry_msgs/Pose pose                   # relocalization result
+geometry_msgs/Pose entry_position_pose
+uint8 relocalization_result               # 0. none; 1. relocalization success; 2.relocalization failed.
+uint8 building_frames_result              # 0. none; 1. building frames success; 2. building frames failed.
+uint8 task_id                             # 2: slam入水重定位   28：召回重定位
+
+---
+uint8 result # 0. receive success;

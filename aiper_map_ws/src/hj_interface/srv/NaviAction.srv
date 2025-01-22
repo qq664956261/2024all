@@ -1,0 +1,25 @@
+uint8 action_cmd    # 1: slam建图 2: slam重定位
+                    # 11: 清扫水面 12: 池底清扫 13: 池壁清扫
+                    # 16：建图/重定位延边  17：极限延边
+                    # 18: 姿态调整
+                    # 19: 清洁模式
+                    # 21: 召回 22: 回充
+                    # 31: slam状态请求 32: navi状态请求 35: 获取清扫记录
+                    # 103: slam停止建图 104: slam停止定位
+                    # 111: 暂停清扫 112: 继续清扫 113: 停止清扫
+                    # 115：停止建图/重定位延边 116：停止极限延边
+                    # 123: 停止召回 124: 停止回充
+                    
+uint8 clean_mode    # 1: 变频清洁 2: 标准清洁 3: 深度清洁
+bool  has_map       # true:有  false:没有
+bool  right_angle   # true:是-整个任务包含池底和池壁  false:否-池底池壁不一起出现在任务中
+uint8 stop_reason   # 1: 出水停止， 2：其他原因停止
+
+---
+
+uint8 result                # 0: 收到 
+                            # 11: navi待机 12: navi清扫中
+                            # 16：navi建图/重定位延边中 17：navi极限延边中
+                            # 18：navi姿态调整中
+                            # 21: navi召回中 22: navi回充中
+CleanRecord CleanRecord     # 清扫记录

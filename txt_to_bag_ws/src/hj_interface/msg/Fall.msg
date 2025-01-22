@@ -1,0 +1,3 @@
+time timestamp
+uint32 left_down
+uint32 right_down

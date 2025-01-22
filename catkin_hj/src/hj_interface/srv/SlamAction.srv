@@ -1,0 +1,7 @@
+uint8 action_cmd    # 1: 建图 2: 定位
+                    # 31: slam状态请求 
+                    # 103: 停止建图 104: 停止定位
+---
+
+uint8 result   # 0: 收到 
+               # 1: slam待机 2: slam建图中 3: slam定位中 

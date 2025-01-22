@@ -1,0 +1,10 @@
+Debug/
+Release/
+*.o
+*.user
+build
+.cmake
+CMakeCache.txt
+CMakeFiles
+.vscode
+Makefile

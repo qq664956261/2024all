@@ -1,0 +1,23 @@
+{
+  "so_dir":"./",
+  "functions": [
+      {
+        "ID": "core_dump",
+        "name": "core_dump",
+        "dump_path": "/tmp/dump_slam_node"
+      },
+      {
+        "ID": "log_redirect",
+        "name": "log_redirect",
+        "err_log_file_path": "",
+        "cout_log_file_path": ""
+      },
+      {
+          "ID": "aiper_slam_fusion",
+          "name": "aiper_slam_fusion",
+          "test_transmit": "well come aiper_slam_fusion",
+          "aiper_slam_work_dir": "/data/03_code/00_slam/aiper_slam/src/slam_project/aliper_slam"
+      }
+
+  ]
+}

@@ -1,0 +1,67 @@
+#############################################################                                                          #
+# Authors: zhangcheng                    #                                            #
+#############################################################
+
+dlo:
+  use_first_frame: false
+
+  odomNode:
+
+    initialPose:
+      use: false
+      position:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation:
+        w: 1.0
+        x: 0.0
+        y: 0.0
+        z: 0.0
+
+    preprocessing:
+      cropBoxFilter:
+        use: false
+        size: 1
+      voxelFilter:
+        scan:
+          use: true
+          res: 0.05
+        submap:
+          use: true
+          res: 0.1
+
+    keyframe:
+      threshD: 1
+      threshR: 45
+
+    submap:
+      keyframe:
+        knn: 30
+        kcv: 10
+        kcc: 10
+
+    imu:
+      calibTime: 3
+      bufferSize: 2000
+
+    gicp:
+      minNumPoints: 10
+      s2s:
+        kCorrespondences: 40
+        maxCorrespondenceDistance: 0.25
+        maxIterations: 320
+        transformationEpsilon: 0.000001
+        euclideanFitnessEpsilon: 0.000001
+        ransac:
+          iterations: 5
+          outlierRejectionThresh: 0.25
+      s2m:
+        kCorrespondences: 40
+        maxCorrespondenceDistance: 0.25
+        maxIterations: 320
+        transformationEpsilon: 0.000001
+        euclideanFitnessEpsilon: 0.000001
+        ransac:
+          iterations: 5
+          outlierRejectionThresh: 0.25

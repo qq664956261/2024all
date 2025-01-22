@@ -1,0 +1,37 @@
+# earth
+earth_rotation_speed: 7.2921151467e-05  # rad/s
+earth_gravity: -9.81
+
+# kalman prediction process std
+position_error_prior_std: 1.0e-5
+velocity_error_prior_std: 1.0e-5
+rotation_error_prior_std: 1.0e-5
+gyro_bias_error_prior_std: 1.0e-5
+accelerometer_bias_error_prior_std: 1.0e-5
+
+# imu sensor noise
+gyro_noise_std: 1.0e-2
+accelerometer_noise_std: 1.0e-1
+
+# encoder measurement process std (uint: m)
+encoder_position_x_std: 0.2
+encoder_position_y_std: 0.2
+encoder_position_z_std: 0.2
+
+# encoder measurement process std (uint: m/s)
+encoder_velocity_x_std: 0.1
+encoder_velocity_y_std: 0.1
+encoder_velocity_z_std: 0.1
+
+# differential driving wheels' distance (m)
+encoder_rc: 0.280
+
+# encoder coefficient to m/s : vscaleforhall=2.0/ppr*M_PI*wheelradius/datatime=2.0/400*M_PI*0.105/10
+encoder_scale: 1.649336143e-4
+
+# only use prediction, equivalent to only using IMU to integration
+only_prediction: false
+
+# use earth model
+use_earth_model: false
+

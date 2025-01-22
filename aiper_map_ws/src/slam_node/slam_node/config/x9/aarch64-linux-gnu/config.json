@@ -1,0 +1,29 @@
+{
+  "so_dir":"/data/hj/lib",
+  "log_path_config":"/data/hj/config/hj_log_slam_node.config",
+  "all_log_close":true,
+  "node_log_close":false,
+  "node_name":"slam_node",
+  "node_threads":4,
+  "functions": [
+    {
+      "ID": "core_dump",
+      "name": "core_dump",
+      "dump_path": "/userdata/hj/log/core_dump/dump_slam_node"
+    },
+    {
+      "ID": "log_redirect",
+      "name": "log_redirect",
+      "err_log_file_path": "/userdata/hj/log/logging/",
+      "cout_log_file_path": ""
+    },
+    {
+      "ID": "aiper_slam_fusion",
+      "name": "aiper_slam_fusion",
+      "test_transmit": "well come aiper_slam_fusion",
+      "aiper_slam_work_dir": "/data/hj/config/slam_node",
+      "aiper_relocalization_dir": "/data/hj/config/slam_node"
+  }
+  ]
+}
+

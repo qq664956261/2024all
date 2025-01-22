@@ -1,0 +1,14 @@
+/*
+ * @Description: 
+ * @Author: zhang cheng
+ * @Date: 2024-04-11 09:50:30
+ */
+#ifndef LOCALIZATION_GLOBAL_DEFINATION_H_IN_
+#define LOCALIZATION_GLOBAL_DEFINATION_H_IN_
+
+#include <string>
+
+namespace localization {
+const std::string WORK_SPACE_PATH = "@WORK_SPACE_PATH@";
+}
+#endif

@@ -1,0 +1,10 @@
+uint8   power              #电量%
+int8    temp1              #温度1 
+int8    temp2              #温度2
+int8    temp3              #温度3
+uint16  bat_vol            #电池电压mV
+int16   bat_disch_cur      #电池放电电流mA
+uint16  ch_vol             #电池充电电压mV
+int16   charger_ch_cur     #充电端充电电流mA
+uint16  bat_cycle_times    #电池循环次数
+uint8   bat_health_left    #电池健康剩余容量

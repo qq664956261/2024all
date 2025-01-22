@@ -1,0 +1,29 @@
+{
+  "version": "0.0.7.1",
+  "relocalization": {
+    "log_path": "/tmp/logging/reloc.log",
+    "icp_score_threshold": 0.06,
+    "distance_threshold": 0.05,
+    "combine_frame": 250,
+    "reloc_distance_threshold": 5,
+    "reloc_source_distance_threshold": 7.5,
+    "use_sim3": true,
+    "curvature_diff_max": 30000,
+    "first_lap_end_dis": 0.6,
+    "first_lap_end_time_diff": 100,
+    "time_diff_thre": 500,
+    "use_mag_dire": true,
+    "dire_deg_thre": 30,
+    "dynamic_icp_score": true,
+    "ultra_param" : {
+      "sonar_left_front_fov_rad": 15,
+      "sonar_left_front_base_x": 0.156,
+      "sonar_left_front_base_y": 0.148,
+      "sonar_left_front_base_yaw": 1.57,
+      "sonar_left_back_fov_rad": 15,
+      "sonar_left_back_base_x": -0.161,
+      "sonar_left_back_base_y": 0.182,
+      "sonar_left_back_base_yaw": 1.701
+    }
+  }
+}

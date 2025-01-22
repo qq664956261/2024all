@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/llj/aiper_map_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/llj/aiper_map_ws/src/slam_node/aiper_map/include/**",
+        "/home/llj/aiper_map_ws/src/hj_interface/include/**",
+        "/home/llj/aiper_map_ws/src/slam_node/slam_node/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,18 @@
+uint8 action_cmd            # 1: 建图 2: 重定位 
+                            # 11: 清扫 
+                            # 16：navi建图/重定位延边 17：navi极限延边
+                            # 18: 姿态调整
+                            # 21: 召回 22: 回充
+
+uint8 action_result         # 1: slam建图成功 2: slam建图失败 
+                            # 11: slam定位成功 12: slam定位失败 
+                            # 21: navi清扫成功 22: navi清扫失败
+                            # 26：建图/重定位延边停止 27：极限延边停止
+                            # 31：navi姿态调整成功 32：navi姿态调整失败
+                            # 41: navi召回成功 42: navi召回失败 
+                            # 51: navi回充成功 52: navi回充失败 
+CleanRecord CleanRecord     # 清扫记录
+
+---
+
+uint8 result    # 0: 收到 

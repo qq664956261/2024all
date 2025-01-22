@@ -1,0 +1,18 @@
+<launch>
+
+   <node pkg="hj_slam" type="hj_slam_ros" name="hj_slam_ros" output="screen">
+     <!-- <remap from="imu" to="mobile_base/imu" />   /mobile_base/imu -->
+     <!-- <remap from="hj_scan" to="b_scan" />
+     <remap from="imu_temp" to="imu_data" /> -->
+
+   </node>
+
+   <param name="robot_description"
+    textfile="$(find hj_slam)/urdf/carto_data_backpack_2d.urdf" />
+
+   <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+   
+   <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find hj_slam)/launch/hj_slam_mapping.rviz" />
+      
+</launch>

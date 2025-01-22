@@ -1,0 +1,110 @@
+{
+  "version": "13.0.1",
+  "tracking": {
+    "only_prediction" : false,
+    "use_magnetic_model" : false,
+    "use_earth_model" : false,
+    "earth_param" : {
+      "earth_rotation_speed": 7.2921151467e-05,
+      "earth_gravity" : 9.80
+    },
+    "ekf_param" : {
+      "_comment" : "kalman prediction process std",
+      "position_error_prior_std": 1.0e-4,
+      "velocity_error_prior_std": 1.0e-4,
+      "rotation_error_prior_std": 1.0e-4,
+      "gyro_bias_error_prior_std": 1.0e-6,
+      "accelerometer_bias_error_prior_std": 1.0e-5
+    },
+    "imu_param" : {
+      "_comment" : "imu sensor noise",
+      "gyro_noise_std" : 0.0001,
+      "accelerometer_noise_std" : 0.3,
+      "bias_x" : 11.7e-2,
+      "bias_y" : -14.7e-2,
+      "bias_z" : -2.0e-2,
+      "gyro_x" : -0e-3,
+      "gyro_y" : -0e-4,
+      "gyro_z" : 0e-4
+    },
+    "imu_axis" : {
+      "_comment" : "correct mcu imu axis Twb",
+      "mat_0_0" : 0,
+      "mat_0_1" : -1,
+      "mat_0_2" : 0,
+      "mat_1_0" : -1,
+      "mat_1_1" : 0,
+      "mat_1_2" : 0,
+      "mat_2_0" : 0,
+      "mat_2_1" : 0,
+      "mat_2_2" : -1
+    },
+    "imu_euler" : {
+      "_comment" : "correct mcu imu euler",
+      "mat_0_0" : -1,
+      "mat_0_1" : 0,
+      "mat_0_2" : 0,
+      "mat_1_0" : 0,
+      "mat_1_1" : 1,
+      "mat_1_2" : 0,
+      "mat_2_0" : 0,
+      "mat_2_1" : 0,
+      "mat_2_2" : -1
+    },
+    "soc_imu_axis" : {
+      "_comment" : "correct soc imu axis Twb",
+      "mat_0_0" : 0,
+      "mat_0_1" : 1,
+      "mat_0_2" : 0,
+      "mat_1_0" : 1,
+      "mat_1_1" : 0,
+      "mat_1_2" : 0,
+      "mat_2_0" : 0,
+      "mat_2_1" : 0,
+      "mat_2_2" : -1
+    },
+    "encoder_param" : {
+      "_encoder_position_comment" : "encoder measurement process std (uint: m)",
+      "encoder_position_x_std" : 0.02,
+      "encoder_position_y_std" : 0.02,
+      "encoder_position_z_std" : 0.02,
+      "_encoder_velocity_comment" : "encoder measurement process std (uint: m/s)",
+      "encoder_velocity_x_std" : 0.01,
+      "encoder_velocity_y_std" : 0.01,
+      "encoder_velocity_z_std" : 0.01,
+      "encoder_rc" : 0.44,
+      "_encoder_scale_comment" : "encoder coefficient to m/s : vscaleforhall=2.0/ppr*M_PI*wheelradius/datatime=2.0/400*M_PI*0.105/10",
+      "encoder_scale" : 1.0e-3
+    },
+    "magnetic_param" : {
+      "_magnetic_comment" : "encoder measurement process std (uint: 1)",
+      "magnetic_offset_x" : -6.5,
+      "magnetic_offset_y" : 86.0,
+      "magnetic_offset_z" : 3.0,
+      "magnetic_x_std" : 5.0,
+      "magnetic_y_std" : 5.0,
+      "magnetic_z_std" : 5.0
+    }
+
+  },
+  "mapping": {
+    "savelog_path": ".",
+    "save_map": true,
+    "save_map_path": "./point_cloud.bin",
+    "load_map": false,
+    "load_map_path": "./point_cloud_1819.bin",
+    "ultra_param" : {
+      "sonar_left_front_fov_rad": 15,
+      "sonar_left_front_base_x": 0.146,
+      "sonar_left_front_base_y": 0.195,
+      "sonar_left_front_base_yaw": 1.57,
+      "sonar_left_back_fov_rad": 15,
+      "sonar_left_back_base_x": -0.148,
+      "sonar_left_back_base_y": 0.195,
+      "sonar_left_back_base_yaw": 1.701
+    }
+  },
+  "icp": {
+    "savelog_path": "."
+  }
+}

@@ -1,0 +1,9 @@
+time custom_time
+uint16 motor_l
+uint16 motor_r
+uint16 pump_l
+uint16 pump_r
+uint16 turn
+uint16 dirtybox
+uint16 flipcover
+uint16 airbag

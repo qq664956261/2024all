@@ -1,0 +1,8 @@
+uint8 action_cmd            # 26: 召回重定位
+
+uint8 action_result         # 1: 召回重定位成功; 2: 召回重定位失败;
+
+geometry_msgs/Point point  # 入水点
+---
+
+uint8 result    # 0: 收到 

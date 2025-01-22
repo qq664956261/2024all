@@ -1,0 +1,118 @@
+{
+  "version": "0.1.8.1",
+  "tracking": {
+    "only_prediction" : false,
+    "use_magnetic_model" : false,
+    "use_earth_model" : false,
+    "earth_param" : {
+      "earth_rotation_speed": 7.2921151467e-05,
+      "earth_gravity" : 9.80
+    },
+    "filter_param" : {
+      "para1": 1.0e-4,
+      "para2": 1.0e-4,
+      "para3": 1.0e-4,
+      "para4": 1.0e-6,
+      "para5": 1.0e-5
+    },
+    "imu_param" : {
+      "para1" : 0.0001,
+      "para2" : 0.3,
+      "para3" : 11.7e-2,
+      "para4" : -14.7e-2,
+      "para5" : -2.0e-2,
+      "para6" : -0e-3,
+      "para7" : -0e-4,
+      "para8" : 0e-4
+    },
+    "imu_axis" : {
+      "mat_0_0" : 1,
+      "mat_0_1" : 0,
+      "mat_0_2" : 0,
+      "mat_1_0" : 0,
+      "mat_1_1" : -1,
+      "mat_1_2" : 0,
+      "mat_2_0" : 0,
+      "mat_2_1" : 0,
+      "mat_2_2" : -1
+    },
+    "imu_euler" : {
+      "mat_0_0" : 0,
+      "mat_0_1" : -1,
+      "mat_0_2" : 0,
+      "mat_1_0" : -1,
+      "mat_1_1" : 0,
+      "mat_1_2" : 0,
+      "mat_2_0" : 0,
+      "mat_2_1" : 0,
+      "mat_2_2" : -1
+    },
+    "soc_imu_axis" : {
+      "mat_0_0" : 0,
+      "mat_0_1" : 1,
+      "mat_0_2" : 0,
+      "mat_1_0" : 1,
+      "mat_1_1" : 0,
+      "mat_1_2" : 0,
+      "mat_2_0" : 0,
+      "mat_2_1" : 0,
+      "mat_2_2" : -1
+    },
+    "mag_axis" : {
+      "mat_0_0" : 0,
+      "mat_0_1" : -1,
+      "mat_0_2" : 0,
+      "mat_1_0" : -1,
+      "mat_1_1" : 0,
+      "mat_1_2" : 0,
+      "mat_2_0" : 0,
+      "mat_2_1" : 0,
+      "mat_2_2" : -1
+    },
+    "encoder_param" : {
+      "encoder_para1" : 0.02,
+      "encoder_para2" : 0.02,
+      "encoder_para3" : 0.02,
+      "encoder_para4" : 0.01,
+      "encoder_para5" : 0.01,
+      "encoder_para6" : 0.01,
+      "encoder_rc" : 0.44,
+      "_encoder_scale_comment" : "encoder coefficient to m/s : vscaleforhall=2.0/ppr*M_PI*wheelradius/datatime=2.0/400*M_PI*0.105/10",
+      "encoder_scale" : 1.0e-3
+    },
+    "magnetic_param" : {
+      "magnetic_offset_x" : -6.5,
+      "magnetic_offset_y" : 86.0,
+      "magnetic_offset_z" : 3.0,
+      "magnetic_x_std" : 5.0,
+      "magnetic_y_std" : 5.0,
+      "magnetic_z_std" : 5.0
+    }
+
+  },                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+  "mapping": {
+    "savelog_path": ".",
+    "save_map": true,
+    "save_map_path": "/userdata/hj/maps/point_cloud.bin",
+    "load_map": false,
+    "load_map_path": "/userdata/hj/maps/point_cloud.bin",
+    "ultra_param" : {
+      "sonar_left_front_fov_rad": 15,
+      "sonar_left_front_base_x": 0.146,
+      "sonar_left_front_base_y": 0.195,
+      "sonar_left_front_base_yaw": 1.57,
+      "sonar_left_back_fov_rad": 15,
+      "sonar_left_back_base_x": -0.148,
+      "sonar_left_back_base_y": 0.195,
+      "sonar_left_back_base_yaw": 1.701
+    },
+    "frames" : {
+      "time_threshold_sec" : 30,
+      "distance_threshold_m" : 0.6,
+      "delta_distance_threshold_m" : 0.05
+    }
+  },
+  "map": {
+    "savelog_path": "."
+  }
+}

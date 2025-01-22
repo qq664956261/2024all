@@ -1,0 +1,35 @@
+%YAML:1.0
+# Data related:
+## Dataset path.
+dataset_path: "/home/zc/data/vio/00/image_2/"
+
+## Image file name format.
+img_file_name_fmt: "%06d.png"
+
+## Image resize factor. A bigger one speeds up tracking.
+img_resize_factor: 1.0
+
+## Vocabulary file name.
+voc_file: "/home/zc/code/monocular_vo-master/data/vocabulary/orbvoc.dbow3"
+
+## Ground truth pose file name.
+pose_file: "/home/zc/code/monocular_vo-master/data/pose/KITTI_seq00_pose.txt"
+
+## Timestamp file name.
+timestamp_file: ""  # KITTI dataset does not provide timestamps
+
+# Camera related:
+## Calibration parameters. 
+fx: 718.856
+fy: 718.856
+cx: 607.1928
+cy: 185.2157
+
+## Distortion coefficients
+k1: 0.0
+k2: 0.0
+p1: 0.0
+p2: 0.0
+
+# Frame per second (fps)
+fps: 3.0

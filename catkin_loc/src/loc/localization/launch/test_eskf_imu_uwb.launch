@@ -1,0 +1,4 @@
+<launch>
+<node pkg="rviz"  type="rviz"  name="rviz"  args="-d $(find localization)/rviz/test_eskf_imu_uwb.rviz"></node>
+<node pkg="localization"  type="test_eskf_imu_uwb_node"  name="test_eskf_imu_uwb_node"  output="screen"></node>
+</launch>
